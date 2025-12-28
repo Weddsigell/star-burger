@@ -114,6 +114,19 @@ wheels = [
 ]
 
 [[package]]
+name = "django-phonenumber-field"
+version = "8.4.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django", version = "5.2.9", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "django", version = "6.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/87/bf/8aa60c9834773b955dff1ddea842e361e8daaf6b0945d5bfc29fc66d53ab/django_phonenumber_field-8.4.0.tar.gz", hash = "sha256:2b83e843dac35eec6a69880a166487235b737a71a1e38c9a52e5ad67d6996083", size = 45512, upload-time = "2025-11-24T15:09:51.904Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8b/a3/f6b85a9246e22cf719752ad83f5e95aa9ba12419b2f9eff70f20d30e55df/django_phonenumber_field-8.4.0-py3-none-any.whl", hash = "sha256:7a1cb3a6456edb54d879f11ffa0acb227ded08c93b587035d0f28093f0e46511", size = 69528, upload-time = "2025-11-24T15:09:45.479Z" },
+]
+
+[[package]]
 name = "environs"
 version = "14.5.0"
 source = { registry = "https://pypi.org/simple" }
@@ -265,6 +278,7 @@ dependencies = [
     { name = "django", version = "5.2.9", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
     { name = "django", version = "6.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "django-debug-toolbar" },
+    { name = "django-phonenumber-field" },
     { name = "environs" },
     { name = "pillow" },
 ]
@@ -274,6 +288,7 @@ requires-dist = [
     { name = "dj-database-url", specifier = ">=3.0.1" },
     { name = "django", specifier = ">=5.2.9" },
     { name = "django-debug-toolbar", specifier = ">=6.1.0" },
+    { name = "django-phonenumber-field", specifier = ">=8.4.0" },
     { name = "environs", specifier = ">=14.5.0" },
     { name = "pillow", specifier = ">=12.0.0" },
 ]
